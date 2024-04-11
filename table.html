@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="task-table">
+            <h1>TASK TRACKER</h1>
+            <h2>TIME SHEETS</h2>
+            <select id="categorySelect">
+                <option value="all">All Categories</option>
+                <option value="Personal Space">Personal Space</option>
+                <option value="Work">Work</option>
+            </select>
+            <button onclick="filterTable()">Filter</button>
+            <table border="1" id="tasksTable">
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Sub Category</th>
+                        <th>Duration</th>
+                        <th>Task</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody"></tbody>
+            </table>
+        </div>
+        <div class="task-form">
+            <h2>Task Details</h2>
+            <form id="taskForm">
+                <label for="Category">Category:</label>
+                <input type="text" id="Category"><br><br>
+                <label for="subCategory">Sub Category:</label>
+                <input type="text" id="subCategory" name="subCategory" required><br><br>
+                <label for="taskDescription">Task Description:</label>
+                <input type="text" id="taskDescription" name="taskDescription" required><br><br>
+                <label for="duration">Duration (HH:MM:SS):</label>
+                <input type="text" id="duration" name="duration" readonly><br><br>
+                <button type="button" onclick="startTimer()">Start</button>
+                <button type="button" onclick="stopTimer()">Stop</button>
+                <button type="submit">Add Task</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

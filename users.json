@@ -1,0 +1,15 @@
+{
+    "userdetails":[
+        {
+            "name":"xxx",
+            "email":"xxx@gmail.com",
+            "password":"123"
+        },
+        {
+            
+            "name":"yyy",
+            "email":"yyy@gmail.com",
+            "password":"234"
+        }
+    ]
+}

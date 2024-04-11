@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:black;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    color: black;
+}
+
+.task-table {
+    flex: 1;
+    margin-right: 20px;
+    background-color:black;
+    color:#fff;
+    width:700px;
+    border-radius: 35px;
+    border-collapse: collapse;
+}
+
+.task-form {
+    flex: 1;
+    padding: 10px;
+    background-color: black;
+    border: 1px solid #007bff;
+    border-radius:35px;
+    max-width: 500px; 
+    margin-right: 100px; 
+    box-sizing: border-box; 
+    margin-top:200px;
+    color: #fff;
+}
+
+
+h1, h2 {
+    text-align: center;
+    color: #fff;
+
+}
+
+select, button {
+    padding: 8px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: aqua;
+    color: #fff;
+    border: #f8f8f8;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+button:hover {
+    background-color:aqua;
+}
+
+button:active {
+    background-color:aqua;
+}
+
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+thead {
+    background-color:cadetblue;
+    color:#fff;
+}
+
+.signup-form, .login-form {
+    padding: 20px;
+    background-color:cornsilk;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+    text-align: center;
+    margin-left: 550px;
+    margin-top:100px;
+    color:black;
+  
+}
+
+input {
+    padding: 8px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color:blue;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color:blue;
+}
+
+
+.login-form h2 {
+    text-align: center;
+    color: #333; 
+}
+
+.signup-form h2 {
+    text-align: center;
+    color: #333; 
+}
